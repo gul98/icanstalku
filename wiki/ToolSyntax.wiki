@@ -1,0 +1,22 @@
+#summary Syntax for stalk.pl and reap.pl
+
+= Introduction =
+
+There are two tools available: 
+  * reap.pl - Analyzes a specific photo at a URL
+  * stalk.pl - Analyzes each photo in a user's photo stream
+
+= reap.pl =
+reap.pl analyzes a single photo at one of the supported photo services and either looks for location related EXIF tags ("geo-tags") and displays the location or displays all the EXIF tags.
+
+== Syntax ==
+`reap.pl <url> [--full] [--debug]`
+
+Where URL is a URL to a photo of one of the supported photo services
+  * TwitPic
+  * YFrog
+  * MobyPicture
+  * Flickr _(Only flic.kr URLs supported)_
+  * Sexypeek
+
+By default, reap.pl will check for geo-tag information only. If _--full_ is given on the command line, reap.pl will print out all EXIF tags embedded in the photo. Running reap.pl with the _--debug_ flag will cause reap.pl to print some diagnostic information.
