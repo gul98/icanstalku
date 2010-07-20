@@ -32,6 +32,7 @@
 
 use strict;
 use Reaper;
+use LWP::Simple;
 use Getopt::Long;
 
 $|=1;
