@@ -78,7 +78,7 @@ if ($service eq "twitpic"){
 	$index_base_url = "http://www.twitpic.com/photos/$username?page=";
 	$photo_base_url = "http://www.twitpic.com/";
 	$more_content = '\"\>More photos';
-	$url_regex = '\<a href="\/(\w+)"\>\<img src';
+	$url_regex = '\<a href="\/(\w+)"\>\<img alt';
 
 }elsif($service eq "yfrog"){
 	$page = 0;
